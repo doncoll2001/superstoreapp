@@ -176,6 +176,12 @@ try:
             )
             .properties(title="Delivery speed by ship mode",height=380)
         )
-        st.altair_chart(ship_chart,use_container_width=True)     
+        st.altair_chart(ship_chart,use_container_width=True) 
+
+    #  summary
+    st.header("summary")
+    st.write()
+    
+        
 except Exception as e:
     st.exception(e)
